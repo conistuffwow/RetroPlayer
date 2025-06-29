@@ -150,7 +150,7 @@ struct iPodView: View {
                 HStack {
                     Text(item.title ?? "Unknown")
                         .font(.system(size: 13))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .padding(.vertical, 6)
                         .padding(.horizontal, 12)
                     Spacer()

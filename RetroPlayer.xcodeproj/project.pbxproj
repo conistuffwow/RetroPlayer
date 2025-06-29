@@ -17,6 +17,7 @@
 		F35F278A2E11A912009B5033 /* iPodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F27892E11A912009B5033 /* iPodView.swift */; };
 		F35F278D2E11B51D009B5033 /* iTunesLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F278C2E11B51D009B5033 /* iTunesLibrary.framework */; };
 		F35F278F2E11B537009B5033 /* iTunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F278E2E11B537009B5033 /* iTunes.swift */; };
+		F35F27912E11BA1A009B5033 /* NowPlayingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F27902E11BA1A009B5033 /* NowPlayingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F35F27892E11A912009B5033 /* iPodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPodView.swift; sourceTree = "<group>"; };
 		F35F278C2E11B51D009B5033 /* iTunesLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iTunesLibrary.framework; path = System/Library/Frameworks/iTunesLibrary.framework; sourceTree = SDKROOT; };
 		F35F278E2E11B537009B5033 /* iTunes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunes.swift; sourceTree = "<group>"; };
+		F35F27902E11BA1A009B5033 /* NowPlayingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		F35F275D2E11A7A7009B5033 /* RetroPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				F35F27902E11BA1A009B5033 /* NowPlayingManager.swift */,
 				F35F278E2E11B537009B5033 /* iTunes.swift */,
 				F35F275E2E11A7A7009B5033 /* RetroPlayerApp.swift */,
 				F35F27602E11A7A7009B5033 /* ContentView.swift */,
@@ -279,6 +282,7 @@
 			files = (
 				F35F27612E11A7A7009B5033 /* ContentView.swift in Sources */,
 				F35F278A2E11A912009B5033 /* iPodView.swift in Sources */,
+				F35F27912E11BA1A009B5033 /* NowPlayingManager.swift in Sources */,
 				F35F275F2E11A7A7009B5033 /* RetroPlayerApp.swift in Sources */,
 				F35F278F2E11B537009B5033 /* iTunes.swift in Sources */,
 			);
