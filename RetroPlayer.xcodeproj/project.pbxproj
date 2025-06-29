@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F35F275F2E11A7A7009B5033 /* RetroPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F275E2E11A7A7009B5033 /* RetroPlayerApp.swift */; };
+		F35F27612E11A7A7009B5033 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F27602E11A7A7009B5033 /* ContentView.swift */; };
+		F35F27632E11A7AB009B5033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35F27622E11A7AB009B5033 /* Assets.xcassets */; };
+		F35F27662E11A7AB009B5033 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35F27652E11A7AB009B5033 /* Preview Assets.xcassets */; };
+		F35F27712E11A7AB009B5033 /* RetroPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F27702E11A7AB009B5033 /* RetroPlayerTests.swift */; };
+		F35F277B2E11A7AB009B5033 /* RetroPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F277A2E11A7AB009B5033 /* RetroPlayerUITests.swift */; };
+		F35F277D2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F277C2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F35F276D2E11A7AB009B5033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F35F27532E11A7A7009B5033 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F35F275A2E11A7A7009B5033;
+			remoteInfo = RetroPlayer;
+		};
+		F35F27772E11A7AB009B5033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F35F27532E11A7A7009B5033 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F35F275A2E11A7A7009B5033;
+			remoteInfo = RetroPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F35F275B2E11A7A7009B5033 /* RetroPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35F275E2E11A7A7009B5033 /* RetroPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPlayerApp.swift; sourceTree = "<group>"; };
+		F35F27602E11A7A7009B5033 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F35F27622E11A7AB009B5033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F35F27652E11A7AB009B5033 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F35F27672E11A7AB009B5033 /* RetroPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RetroPlayer.entitlements; sourceTree = "<group>"; };
+		F35F276C2E11A7AB009B5033 /* RetroPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35F27702E11A7AB009B5033 /* RetroPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPlayerTests.swift; sourceTree = "<group>"; };
+		F35F27762E11A7AB009B5033 /* RetroPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35F277A2E11A7AB009B5033 /* RetroPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPlayerUITests.swift; sourceTree = "<group>"; };
+		F35F277C2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F35F27582E11A7A7009B5033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F27692E11A7AB009B5033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F27732E11A7AB009B5033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F35F27522E11A7A6009B5033 = {
+			isa = PBXGroup;
+			children = (
+				F35F275D2E11A7A7009B5033 /* RetroPlayer */,
+				F35F276F2E11A7AB009B5033 /* RetroPlayerTests */,
+				F35F27792E11A7AB009B5033 /* RetroPlayerUITests */,
+				F35F275C2E11A7A7009B5033 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F35F275C2E11A7A7009B5033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F35F275B2E11A7A7009B5033 /* RetroPlayer.app */,
+				F35F276C2E11A7AB009B5033 /* RetroPlayerTests.xctest */,
+				F35F27762E11A7AB009B5033 /* RetroPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F35F275D2E11A7A7009B5033 /* RetroPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F35F275E2E11A7A7009B5033 /* RetroPlayerApp.swift */,
+				F35F27602E11A7A7009B5033 /* ContentView.swift */,
+				F35F27622E11A7AB009B5033 /* Assets.xcassets */,
+				F35F27672E11A7AB009B5033 /* RetroPlayer.entitlements */,
+				F35F27642E11A7AB009B5033 /* Preview Content */,
+			);
+			path = RetroPlayer;
+			sourceTree = "<group>";
+		};
+		F35F27642E11A7AB009B5033 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F35F27652E11A7AB009B5033 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F35F276F2E11A7AB009B5033 /* RetroPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F35F27702E11A7AB009B5033 /* RetroPlayerTests.swift */,
+			);
+			path = RetroPlayerTests;
+			sourceTree = "<group>";
+		};
+		F35F27792E11A7AB009B5033 /* RetroPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F35F277A2E11A7AB009B5033 /* RetroPlayerUITests.swift */,
+				F35F277C2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift */,
+			);
+			path = RetroPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F35F275A2E11A7A7009B5033 /* RetroPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35F27802E11A7AB009B5033 /* Build configuration list for PBXNativeTarget "RetroPlayer" */;
+			buildPhases = (
+				F35F27572E11A7A7009B5033 /* Sources */,
+				F35F27582E11A7A7009B5033 /* Frameworks */,
+				F35F27592E11A7A7009B5033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetroPlayer;
+			productName = RetroPlayer;
+			productReference = F35F275B2E11A7A7009B5033 /* RetroPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F35F276B2E11A7AB009B5033 /* RetroPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35F27832E11A7AB009B5033 /* Build configuration list for PBXNativeTarget "RetroPlayerTests" */;
+			buildPhases = (
+				F35F27682E11A7AB009B5033 /* Sources */,
+				F35F27692E11A7AB009B5033 /* Frameworks */,
+				F35F276A2E11A7AB009B5033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F35F276E2E11A7AB009B5033 /* PBXTargetDependency */,
+			);
+			name = RetroPlayerTests;
+			productName = RetroPlayerTests;
+			productReference = F35F276C2E11A7AB009B5033 /* RetroPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F35F27752E11A7AB009B5033 /* RetroPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35F27862E11A7AB009B5033 /* Build configuration list for PBXNativeTarget "RetroPlayerUITests" */;
+			buildPhases = (
+				F35F27722E11A7AB009B5033 /* Sources */,
+				F35F27732E11A7AB009B5033 /* Frameworks */,
+				F35F27742E11A7AB009B5033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F35F27782E11A7AB009B5033 /* PBXTargetDependency */,
+			);
+			name = RetroPlayerUITests;
+			productName = RetroPlayerUITests;
+			productReference = F35F27762E11A7AB009B5033 /* RetroPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F35F27532E11A7A7009B5033 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F35F275A2E11A7A7009B5033 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F35F276B2E11A7AB009B5033 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F35F275A2E11A7A7009B5033;
+					};
+					F35F27752E11A7AB009B5033 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F35F275A2E11A7A7009B5033;
+					};
+				};
+			};
+			buildConfigurationList = F35F27562E11A7A7009B5033 /* Build configuration list for PBXProject "RetroPlayer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F35F27522E11A7A6009B5033;
+			productRefGroup = F35F275C2E11A7A7009B5033 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F35F275A2E11A7A7009B5033 /* RetroPlayer */,
+				F35F276B2E11A7AB009B5033 /* RetroPlayerTests */,
+				F35F27752E11A7AB009B5033 /* RetroPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F35F27592E11A7A7009B5033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F27662E11A7AB009B5033 /* Preview Assets.xcassets in Resources */,
+				F35F27632E11A7AB009B5033 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F276A2E11A7AB009B5033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F27742E11A7AB009B5033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F35F27572E11A7A7009B5033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F27612E11A7A7009B5033 /* ContentView.swift in Sources */,
+				F35F275F2E11A7A7009B5033 /* RetroPlayerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F27682E11A7AB009B5033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F27712E11A7AB009B5033 /* RetroPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35F27722E11A7AB009B5033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35F277D2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift in Sources */,
+				F35F277B2E11A7AB009B5033 /* RetroPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F35F276E2E11A7AB009B5033 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F35F275A2E11A7A7009B5033 /* RetroPlayer */;
+			targetProxy = F35F276D2E11A7AB009B5033 /* PBXContainerItemProxy */;
+		};
+		F35F27782E11A7AB009B5033 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F35F275A2E11A7A7009B5033 /* RetroPlayer */;
+			targetProxy = F35F27772E11A7AB009B5033 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F35F277E2E11A7AB009B5033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F35F277F2E11A7AB009B5033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F35F27812E11A7AB009B5033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RetroPlayer/RetroPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetroPlayer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.conistuffwow.RetroPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F35F27822E11A7AB009B5033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RetroPlayer/RetroPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetroPlayer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.conistuffwow.RetroPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F35F27842E11A7AB009B5033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.conistuffwow.RetroPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroPlayer";
+			};
+			name = Debug;
+		};
+		F35F27852E11A7AB009B5033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.conistuffwow.RetroPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroPlayer";
+			};
+			name = Release;
+		};
+		F35F27872E11A7AB009B5033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.conistuffwow.RetroPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RetroPlayer;
+			};
+			name = Debug;
+		};
+		F35F27882E11A7AB009B5033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.conistuffwow.RetroPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RetroPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F35F27562E11A7A7009B5033 /* Build configuration list for PBXProject "RetroPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F277E2E11A7AB009B5033 /* Debug */,
+				F35F277F2E11A7AB009B5033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35F27802E11A7AB009B5033 /* Build configuration list for PBXNativeTarget "RetroPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F27812E11A7AB009B5033 /* Debug */,
+				F35F27822E11A7AB009B5033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35F27832E11A7AB009B5033 /* Build configuration list for PBXNativeTarget "RetroPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F27842E11A7AB009B5033 /* Debug */,
+				F35F27852E11A7AB009B5033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35F27862E11A7AB009B5033 /* Build configuration list for PBXNativeTarget "RetroPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35F27872E11A7AB009B5033 /* Debug */,
+				F35F27882E11A7AB009B5033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F35F27532E11A7A7009B5033 /* Project object */;
+}
