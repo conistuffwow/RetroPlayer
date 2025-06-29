@@ -10,8 +10,10 @@ import SwiftUI
 @main
 struct RetroPlayerApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        WindowGroup("RetroMusic") {
+            iPodView()
+                .frame(width: 300, height: 300)
         }
+        .windowResizability(.contentSize)
     }
 }

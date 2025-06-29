@@ -14,6 +14,7 @@
 		F35F27712E11A7AB009B5033 /* RetroPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F27702E11A7AB009B5033 /* RetroPlayerTests.swift */; };
 		F35F277B2E11A7AB009B5033 /* RetroPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F277A2E11A7AB009B5033 /* RetroPlayerUITests.swift */; };
 		F35F277D2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F277C2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift */; };
+		F35F278A2E11A912009B5033 /* iPodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F27892E11A912009B5033 /* iPodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F35F27762E11A7AB009B5033 /* RetroPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35F277A2E11A7AB009B5033 /* RetroPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPlayerUITests.swift; sourceTree = "<group>"; };
 		F35F277C2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F35F27892E11A912009B5033 /* iPodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				F35F275E2E11A7A7009B5033 /* RetroPlayerApp.swift */,
 				F35F27602E11A7A7009B5033 /* ContentView.swift */,
+				F35F27892E11A912009B5033 /* iPodView.swift */,
 				F35F27622E11A7AB009B5033 /* Assets.xcassets */,
 				F35F27672E11A7AB009B5033 /* RetroPlayer.entitlements */,
 				F35F27642E11A7AB009B5033 /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35F27612E11A7A7009B5033 /* ContentView.swift in Sources */,
+				F35F278A2E11A912009B5033 /* iPodView.swift in Sources */,
 				F35F275F2E11A7A7009B5033 /* RetroPlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
