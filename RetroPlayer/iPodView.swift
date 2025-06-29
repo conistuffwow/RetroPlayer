@@ -1,7 +1,23 @@
 import SwiftUI
 import IOKit.ps
+import iTunesLibrary
+
+enum MenuLevel {
+    case root
+    case music
+    case allMusic
+}
 
 struct iPodView: View {
+    @State private var menuLevel: MenuLevel = .root
+    private let musicManager = MusicLibraryManager()
+    @State private var songs: [ITLibMediaItem]
+    
+    public init(songs: [ITLibMediaItem]) {
+        self.songs = songs
+    }
+    
+    @Namespace private var transition
     var batteryInfo: (Int, Bool) {
         let snapshot = IOPSCopyPowerSourcesInfo().takeRetainedValue()
         let sources = IOPSCopyPowerSourcesList(snapshot).takeRetainedValue() as Array
@@ -33,10 +49,30 @@ struct iPodView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Text("iPod")
-                    .font(.system(size: 14, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
-                    .padding(.leading, 8)
+                if menuLevel != .root {
+                    Button(action: {
+                        switch menuLevel {
+                        case .music: menuLevel = .root
+                        case .allMusic: menuLevel = .music
+                        default: break
+                        }
+                    }) {
+                        HStack(spacing: 4) {
+                            Image(systemName: "chevron.left")
+                                .font(.system(size: 12))
+                        Text("Back")
+                                .font(.system(size: 12, weight: .medium, design: .rounded))
+                        }
+                        .foregroundColor(.white)
+                        .padding(.leading, 8)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                } else {
+                    Text("iPod")
+                        .font(.system(size: 14, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
+                        .padding(.leading, 8)
+                }
 
                 Spacer()
 
@@ -53,28 +89,24 @@ struct iPodView: View {
             .frame(maxWidth: .infinity)
             .background(Color.black.opacity(0.6))
 
-            VStack(spacing: 0) {
-                Button(action: {
-                    print("Music tapped")
-                }) {
-                    HStack {
-                        Text("Music")
-                            .font(.system(size: 16, weight: .medium, design: .rounded))
-                            .foregroundColor(.white)
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .foregroundColor(.white.opacity(0.6))
-                    }
-                    .padding(.vertical, 6)
-                    .padding(.horizontal, 12)
-                    .contentShape(Rectangle())
-                    .background(Color.white.opacity(0.1))
+            // Main animated content
+            ZStack {
+                if menuLevel == .root {
+                    mainMenu
+                        .transition(.move(edge: .trailing))
                 }
-                .buttonStyle(PlainButtonStyle())
+
+                if menuLevel == .music {
+                    musicMenu
+                        .transition(.move(edge: .trailing))
+                }
+
+                if menuLevel == .allMusic {
+                    allMusicMenu
+                        .transition(.move(edge: .trailing))
+                }
             }
-            .padding(.top, 10)
-            .padding(.horizontal)
-            .frame(maxWidth: .infinity)
+            .animation(.easeInOut, value: menuLevel)
 
             Spacer()
         }
@@ -86,5 +118,77 @@ struct iPodView: View {
             )
             .ignoresSafeArea()
         )
+    }
+
+    var mainMenu: some View {
+        VStack(spacing: 0) {
+            menuItem(title: "Music") {
+                menuLevel = .music
+            }
+        }
+        .padding(.top, 10)
+    }
+
+    var musicMenu: some View {
+        VStack(spacing: 0) {
+            menuItem(title: "All Music") {
+                songs = musicManager.allSongs()
+                menuLevel = .allMusic
+                
+            }
+            menuItem(title: "Playlists") {}
+                .opacity(0.5)
+            menuItem(title: "Albums") {}
+                .opacity(0.5)
+        }
+        .padding(.top, 10)
+    }
+
+    var allMusicMenu: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ForEach(songs, id: \.persistentID) { item in
+                HStack {
+                    Text(item.title ?? "Unknown")
+                        .font(.system(size: 13))
+                        .foregroundColor(.white)
+                        .padding(.vertical, 6)
+                        .padding(.horizontal, 12)
+                    Spacer()
+                }
+                .background(Color.white.opacity(0.08))
+            }
+        }
+        .padding(.top, 10)
+    }
+
+    func menuItem(title: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack {
+                Text(title)
+                    .font(.system(size: 13, weight: .regular, design: .rounded))
+                    .foregroundColor(.white)
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .foregroundColor(.white.opacity(0.6))
+                    .font(.system(size: 11))
+            }
+            .padding(.vertical, 6)
+            .padding(.horizontal, 12)
+            .background(Color.black.opacity(0.2))
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(PlainButtonStyle())
+    }
+
+    var mockSongs: [String] {
+        [
+            "01 - Boulevard of Broken Dreams",
+            "02 - Take On Me",
+            "03 - Smells Like Teen Spirit",
+            "04 - Africa",
+            "05 - Song 2",
+            "06 - Piano Man",
+            "07 - Yellow Submarine"
+        ]
     }
 }

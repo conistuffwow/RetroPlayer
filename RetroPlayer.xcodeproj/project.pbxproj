@@ -15,6 +15,8 @@
 		F35F277B2E11A7AB009B5033 /* RetroPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F277A2E11A7AB009B5033 /* RetroPlayerUITests.swift */; };
 		F35F277D2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F277C2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift */; };
 		F35F278A2E11A912009B5033 /* iPodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F27892E11A912009B5033 /* iPodView.swift */; };
+		F35F278D2E11B51D009B5033 /* iTunesLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F278C2E11B51D009B5033 /* iTunesLibrary.framework */; };
+		F35F278F2E11B537009B5033 /* iTunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F278E2E11B537009B5033 /* iTunes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F35F277A2E11A7AB009B5033 /* RetroPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPlayerUITests.swift; sourceTree = "<group>"; };
 		F35F277C2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F35F27892E11A912009B5033 /* iPodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPodView.swift; sourceTree = "<group>"; };
+		F35F278C2E11B51D009B5033 /* iTunesLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iTunesLibrary.framework; path = System/Library/Frameworks/iTunesLibrary.framework; sourceTree = SDKROOT; };
+		F35F278E2E11B537009B5033 /* iTunes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35F278D2E11B51D009B5033 /* iTunesLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				F35F276F2E11A7AB009B5033 /* RetroPlayerTests */,
 				F35F27792E11A7AB009B5033 /* RetroPlayerUITests */,
 				F35F275C2E11A7A7009B5033 /* Products */,
+				F35F278B2E11B51C009B5033 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +103,7 @@
 		F35F275D2E11A7A7009B5033 /* RetroPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				F35F278E2E11B537009B5033 /* iTunes.swift */,
 				F35F275E2E11A7A7009B5033 /* RetroPlayerApp.swift */,
 				F35F27602E11A7A7009B5033 /* ContentView.swift */,
 				F35F27892E11A912009B5033 /* iPodView.swift */,
@@ -130,6 +137,14 @@
 				F35F277C2E11A7AB009B5033 /* RetroPlayerUITestsLaunchTests.swift */,
 			);
 			path = RetroPlayerUITests;
+			sourceTree = "<group>";
+		};
+		F35F278B2E11B51C009B5033 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F35F278C2E11B51D009B5033 /* iTunesLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +280,7 @@
 				F35F27612E11A7A7009B5033 /* ContentView.swift in Sources */,
 				F35F278A2E11A912009B5033 /* iPodView.swift in Sources */,
 				F35F275F2E11A7A7009B5033 /* RetroPlayerApp.swift in Sources */,
+				F35F278F2E11B537009B5033 /* iTunes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
